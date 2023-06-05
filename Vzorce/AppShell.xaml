@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Vzorce.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Vzorce.Pages"
+    xmlns:views="clr-namespace:Vzorce.Pages"
+    Shell.FlyoutBehavior="Flyout"
+    TabBarBackgroundColor="#512BD4">
+    
+    <Shell.FlyoutHeaderTemplate>
+        <DataTemplate>
+            <Grid BackgroundColor="#512BD4"
+                  HeightRequest="200">
+                <Image Aspect="AspectFill"
+                       Opacity="0.6" />
+                <Label Text="Vzorce"
+                       TextColor="White"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center" />
+            </Grid>
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>
+    
+    <FlyoutItem Title="Úvod">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate views:Main}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Čtverce">
+        <Tab
+            Title="Čtverec">
+            <ShellContent ContentTemplate="{DataTemplate views:CTVR}" />
+        </Tab>
+        <Tab
+            Title="Krychle">
+            <ShellContent ContentTemplate="{DataTemplate views:KRCHL}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Obdelníky">
+        <Tab
+            Title="Obdelník">
+            <ShellContent ContentTemplate="{DataTemplate views:OBDL}" />
+        </Tab>
+        <Tab
+            Title="Kvádr">
+            <ShellContent ContentTemplate="{DataTemplate views:KVDR}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Kruhy">
+        <Tab
+            Title="Kruh">
+            <ShellContent ContentTemplate="{DataTemplate views:KRH}" />
+        </Tab>
+        <Tab
+            Title="Koule">
+            <ShellContent ContentTemplate="{DataTemplate views:KL}" />
+        </Tab>
+        <Tab
+            Title="Válec">
+            <ShellContent ContentTemplate="{DataTemplate views:VLC}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Kvadratická rovnice">
+        <Tab
+            Title="Kvadratická rovnice">
+            <ShellContent ContentTemplate="{DataTemplate views:KVADROV}" />
+        </Tab>
+    </FlyoutItem>
+
+    <Shell.FlyoutFooterTemplate>
+        <DataTemplate>
+            <StackLayout>
+                <Label Text="©vzorce.cz"
+                       TextColor="Black"
+                       BackgroundColor="#512BD4"
+                       FontAttributes="Bold"
+                       WidthRequest="350"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       HorizontalOptions="Center" />
+            </StackLayout>
+        </DataTemplate>
+    </Shell.FlyoutFooterTemplate>
+
+</Shell>

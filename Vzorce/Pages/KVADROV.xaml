@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Vzorce.Pages.KVADROV"
+             Shell.BackgroundColor="#512BD4"
+             Title="Kvadratická rovnice">
+    <VerticalStackLayout>
+        <Label 
+            Text="Zadej počet X ²"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+
+        <Entry x:Name="X2"
+               VerticalOptions="Center" 
+               Keyboard="Numeric"
+               HorizontalOptions="Center"
+               WidthRequest="50"
+               HeightRequest="50"
+               BackgroundColor="LightGray"/>
+
+        <Label 
+            Text="Zadej počet X:"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+
+        <Entry x:Name="XN"
+               VerticalOptions="Center" 
+               Keyboard="Numeric"
+               HorizontalOptions="Center"
+               WidthRequest="50"
+               HeightRequest="50"
+               BackgroundColor="LightGray"/>
+        <Label 
+            Text="Zadej zadej čislo:"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+
+        <Entry x:Name="C"
+               VerticalOptions="Center" 
+               Keyboard="Numeric"
+               HorizontalOptions="Center"
+               WidthRequest="50"
+               HeightRequest="50"
+               BackgroundColor="LightGray"/>
+
+        <Button x:Name="btn"
+                Text="Vypočítat"
+                Clicked="Vypocet"
+                VerticalOptions="Center"
+               HorizontalOptions="Center"
+               WidthRequest="100"
+               HeightRequest="50"/>
+
+        <Label x:Name="Vysledek"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+    </VerticalStackLayout>
+</ContentPage>

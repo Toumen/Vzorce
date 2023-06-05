@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Vzorce.Pages.KRCHL"
+             Shell.BackgroundColor="#512BD4"
+             Title="Krychle"
+             BackgroundColor="Gray">
+    <VerticalStackLayout>
+        <Label 
+            Text="Zadej délku strany v cm:"
+            TextColor="Black"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+
+        <Entry x:Name="VelS"
+               VerticalOptions="Center" 
+               Keyboard="Numeric"
+               HorizontalOptions="Center"
+               WidthRequest="50"
+               HeightRequest="50"
+               BackgroundColor="LightGray"/>
+
+        <Button x:Name="btctverec"
+                Text="Vypočítat"
+                Clicked="Vypocet"
+                VerticalOptions="Center"
+               HorizontalOptions="Center"
+               WidthRequest="100"
+               HeightRequest="50"/>
+
+        <Label x:Name="Vysledek"
+               TextColor="Black"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+
+    </VerticalStackLayout>
+</ContentPage>
